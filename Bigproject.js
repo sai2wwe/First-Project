@@ -16,7 +16,7 @@ function changeTheme()
         document.documentElement.style.setProperty('--shadow','1px 4px 4px 4px rgba(255, 255, 255, 0.25)');
         document.documentElement.style.setProperty('--shadow-hover','2px 4px 10px 5px  rgba(255, 255, 255, 0.25)');
         
-        document.getElementsByClassName("logo")[0].src="iiitkottayam_logo_white.PNG"
+        document.getElementsByClassName("logo")[0].src="First-Project.github.io/iiitkottayam_logo_white.PNG"
         document.getElementsByClassName("name")[0].id = 0;
         document.getElementsByClassName("show")[0].src = "icon-arrow-right-white.png";
     }
