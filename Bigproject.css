@@ -1,0 +1,321 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 2px 4px 10px 3px rgba(0, 0, 0, 0.25);
+    --border-color:none;
+    --logo-height: 70px;
+    --logo-width: 100px;
+    --dark-theme: black;
+    --footer-color:rgba(221, 221, 217, 1);
+    --footer-color2:rgba(221, 221, 217, .6);
+    
+}
+
+body {
+    background-color: var(--background-color,white);
+    transition: all 0.6s ease-in;
+}
+
+
+.content {
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+
+.logo {
+    width: var(--logo-width,100px);
+    
+    height: var(--logo-height,70px);
+    border: 0px solid #ffffff;
+    transition: all 0.6s ease-in-out;
+}
+.name {
+    margin-top: 0px;
+    text-align: right;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--text-color,black);
+    transition: all 0.6s ease-in;
+}
+.name:hover {
+    cursor: pointer;
+}
+.navigationbar {
+    float: right;
+    list-style-type: none;
+    
+    overflow: hidden;
+}
+.navigationbar li:not(:last-child) {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; 
+    color: var(--text-color,black);
+    transition: all 0.01s ease-in;
+    
+    
+}
+a {
+    color: var(--text-color,black);
+    text-decoration: none;
+}
+.navigationbar .Institute{
+    float: left;
+    display: block;
+    padding-left: 10px;
+    text-align: center;
+    color: var(--text-color,black);
+    transition: all 0.2s ease-in;
+}
+
+.navigationbar li:hover {
+    text-decoration: underline;
+    text-decoration-color: #EB17EF;
+    
+    cursor: pointer;
+    font-weight: bold;
+}
+a:hover {
+    color: var(--dark-theme,black);
+}
+
+.welcome {
+    font-size: 80px;
+    text-align: left;
+    margin-top: 80px;
+    width: 490px;
+    color: var(--text-color,black);
+    transition: all 0.6s ease-in;
+}
+.tagline {
+    font-size: large;
+    text-align: left;
+    margin-top: 20px;
+    width:460px;
+    color: var(--text-color,black);
+    transition: all 0.6s ease-in;
+}
+
+.startimage {
+    position: absolute;
+    margin-right: 100px;
+    right: 0;
+    top: 250px;
+    width: 500px;
+    object-fit: cover;
+    
+    transition: all 1.5s ease;
+
+}
+.startimage:hover {
+    width: 530px;
+    border-radius: 15px;
+    
+    
+}
+
+.show {
+    margin-left: 50%;
+    margin-top: 16%;
+    margin-bottom: 100px;
+    width:30px;
+    border-color: var(--text-color,black);
+    transition: all 0.6s ease-in;
+}
+.show:hover {
+    margin-right: 50%;
+    margin-top: 16%;
+    
+    width: 33px;
+}
+
+
+.box1,.box2,.box3 {
+    
+    height: 250px;
+    
+    
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    
+    
+    color: var(--text-color);
+    transition: all 0.6s ease-in;
+    
+    
+    float: left;
+    width: 28%;
+
+    background: var(--background-color);
+    box-shadow: var(--shadow);
+    border-radius: 25px;
+
+    transition: box-shadow 0.3s ease-in;
+    overflow: hidden;
+    
+}
+.box1,.box2 {
+    margin-right: 4%;
+}
+.box3,.box2 {
+    margin-left: 3.6%;
+}
+.box1:hover,.box2:hover,.box3:hover {
+    box-shadow: var(--shadow-hover);
+    border-width: 10px;
+    border: 1px solid var(--border-color);
+    
+}
+
+
+
+/* For about.html*/
+.aboutimg {
+    opacity: 0.8;
+    width: 100%;
+    height: 480px;
+    margin-bottom: 30px;
+}
+.textinpic {
+    position: absolute;
+    width: 410px;
+    height: 60px;
+    z-index: 1;
+    left: 600px;
+    top: 411px;
+    
+    font-style: normal;
+    font-weight: 1000px;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.about {
+    text-align: left;
+    width: 50%;
+    color: var(--text-color);
+}
+.aboutcontent {
+    text-align: left;
+    background-color: #DDDDD9;
+    position: absolute;
+    right: 100px;
+    border-radius: 23px;
+    height: 280px;
+    margin-bottom: 10px;
+
+}
+.aboutcontent #aboutlist li,#aboutL {
+    float: none;
+    list-style: none;
+    text-align: left;
+    padding-right: 50px;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--text-color);
+
+}
+.aboutcontent #aboutlist li:hover,#aboutL:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration-color: var(--dark-theme);
+}
+.admission {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 300px;
+    color: var(--text-color);
+    text-align: middle;
+    text-align: center;
+}
+
+h3 {
+    position: absolute;
+    width: 479px;
+    height: 45px;
+    
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+
+
+
+color: #8F2CA8;
+}
+table {
+    margin-top: 200px;
+    color: var(--text-color);
+    
+    width: 100%;
+    height: 80%;
+    
+    
+}
+
+/*End of about*/
+
+.footerstart{
+    margin-left: 0;
+    margin-right: 0px;
+    margin-top: 300px;
+    width: 100%;
+}
+
+footer .footerstart {
+    background-color: var(--footer-color2);
+    margin-bottom: 0;
+    padding-top: 1%;
+    text-align: justify;
+    
+    height: 40px;
+    font-size: large;
+    color: var(--text-color);
+    
+}
+
+footer :last-child {
+    background-color: var(--footer-color);
+    border-radius: 1px;
+    margin-top: 0px;
+}
+footer :last-child .copyright {
+    text-align: center;
+    color: var(--text-color);
+    font-style: oblique;
+    
+}
+.dept table {
+    width: 25%;
+    
+    
+}
+
+.dept table tr td {
+    padding-left: 20%;
+    padding-top: 2%;
+    width: 50%;
+    
+}
+.dept th {
+    padding-left: 15%;
+    
+}
+footer ul ,ol,.dept{
+    list-style-type: none;
+    color: var(--text-color);
+}
